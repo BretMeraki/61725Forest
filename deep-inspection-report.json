@@ -1,0 +1,1093 @@
+{
+  "totalIssues": 120,
+  "highSeverity": 36,
+  "mediumSeverity": 84,
+  "lowSeverity": 0,
+  "issues": [
+    {
+      "file": "server-modular.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded localhost reference: Found 1 instances",
+      "examples": [
+        "localhost"
+      ]
+    },
+    {
+      "file": "server-modular.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 5 instances",
+      "examples": [
+        "\"config.json\"",
+        "`day_${today}.json`",
+        "\"hta.json\""
+      ]
+    },
+    {
+      "file": "server-modular.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 20 instances",
+      "examples": [
+        "console.error(",
+        "console.error(",
+        "console.error("
+      ]
+    },
+    {
+      "file": "server-modular.js",
+      "type": "TYPE_SAFETY",
+      "severity": "MEDIUM",
+      "message": "TypeScript ignore comments: Found 4 instances",
+      "examples": [
+        "@ts-ignore",
+        "@ts-ignore",
+        "@ts-ignore"
+      ]
+    },
+    {
+      "file": "server-modular.js",
+      "type": "TYPE_SAFETY",
+      "severity": "MEDIUM",
+      "message": "TypeScript any type usage: Found 1 instances",
+      "examples": [
+        "any *"
+      ]
+    },
+    {
+      "file": "analytics-tools.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 11 instances",
+      "examples": [
+        "`day_${today}.json`",
+        "'config.json'",
+        "'config.json'"
+      ]
+    },
+    {
+      "file": "analytics-tools.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Generic error messages: Found 4 instances",
+      "examples": [
+        "throw new Error('Project configuration not found')",
+        "throw new Error('Project configuration not found')"
+      ]
+    },
+    {
+      "file": "analytics-tools.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Triple nested loops: Found 5 instances"
+    },
+    {
+      "file": "analytics-tools.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 1 instances",
+      "examples": [
+        "key"
+      ]
+    },
+    {
+      "file": "constants.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded data directory path: Found 1 instances",
+      "examples": [
+        "'.forest-data'"
+      ]
+    },
+    {
+      "file": "constants.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded port number: Found 1 instances",
+      "examples": [
+        "PORT: 3001"
+      ]
+    },
+    {
+      "file": "constants.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded localhost reference: Found 1 instances",
+      "examples": [
+        "localhost"
+      ]
+    },
+    {
+      "file": "constants.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 7 instances",
+      "examples": [
+        "'config.json'",
+        "'hta.json'",
+        "'learning_history.json'"
+      ]
+    },
+    {
+      "file": "core-infrastructure.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded data directory path: Found 1 instances",
+      "examples": [
+        "'\n      },\n      {\n        capabilities: {\n          tools: {}\n        }\n      }\n    );\n    \n    // Decide on a guaranteed-writable data directory.\n    // 1. If FOREST_DATA_DIR is set, use that.\n    // 2. Otherwise default to ~/.forest-data (cross-platform writable location).\n    this.dataDir = process.env.FOREST_DATA_DIR\n      ? path.resolve(process.env.FOREST_DATA_DIR)\n      : path.join(os.homedir(), '"
+      ]
+    },
+    {
+      "file": "data-persistence.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 1 instances",
+      "examples": [
+        "console.error("
+      ]
+    },
+    {
+      "file": "errors.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 1 instances",
+      "examples": [
+        "key"
+      ]
+    },
+    {
+      "file": "hta-status.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 3 instances",
+      "examples": [
+        "'config.json'",
+        "'hta.json'",
+        "'hta.json'"
+      ]
+    },
+    {
+      "file": "hta-status.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Generic error messages: Found 1 instances",
+      "examples": [
+        "throw new Error('Project configuration not found')"
+      ]
+    },
+    {
+      "file": "hta-tree-builder.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 6 instances",
+      "examples": [
+        "'config.json'",
+        "'config.json'",
+        "'hta.json'"
+      ]
+    },
+    {
+      "file": "hta-tree-builder.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Generic error messages: Found 1 instances",
+      "examples": [
+        "throw new Error('Project configuration not found')"
+      ]
+    },
+    {
+      "file": "hta-tree-builder.js",
+      "type": "ASYNC_ISSUE",
+      "severity": "MEDIUM",
+      "message": "Await in for loop (potential performance issue): Found 1 instances",
+      "examples": [
+        "for (const branch of strategicBranches) {\n      // Pure AI generation: ask the LLM to generate tasks for this branch\n      const aiNodes = await"
+      ]
+    },
+    {
+      "file": "hta-tree-builder.js",
+      "type": "TYPE_SAFETY",
+      "severity": "MEDIUM",
+      "message": "Multiple optional chaining (potential over-defensive): Found 1 instances",
+      "examples": [
+        "?.frontierNodes?."
+      ]
+    },
+    {
+      "file": "hta-tree-builder.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Triple nested loops: Found 1 instances"
+    },
+    {
+      "file": "hta-tree-builder.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 1 instances",
+      "examples": [
+        "key"
+      ]
+    },
+    {
+      "file": "identity-engine.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 3 instances",
+      "examples": [
+        "'config.json'",
+        "'learning_history.json'",
+        "'learning_history.json'"
+      ]
+    },
+    {
+      "file": "identity-engine.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Generic error messages: Found 1 instances",
+      "examples": [
+        "throw new Error('Project configuration not found')"
+      ]
+    },
+    {
+      "file": "identity-engine.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Complex boolean conditions: Found 1 instances"
+    },
+    {
+      "file": "identity-engine.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Triple nested loops: Found 3 instances"
+    },
+    {
+      "file": "identity-engine.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 14 instances",
+      "examples": [
+        "key",
+        "key"
+      ]
+    },
+    {
+      "file": "llm-integration.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 3 instances",
+      "examples": [
+        "'config.json'",
+        "'learning_history.json'",
+        "'learning_history.json'"
+      ]
+    },
+    {
+      "file": "llm-integration.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Triple nested loops: Found 4 instances"
+    },
+    {
+      "file": "llm-integration.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 17 instances",
+      "examples": [
+        "Key",
+        "Key"
+      ]
+    },
+    {
+      "file": "mcp-handlers.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 3 instances",
+      "examples": [
+        "key",
+        "Key"
+      ]
+    },
+    {
+      "file": "memory-sync.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 5 instances",
+      "examples": [
+        "'config.json'",
+        "'hta.json'",
+        "'learning_history.json'"
+      ]
+    },
+    {
+      "file": "project-management.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 11 instances",
+      "examples": [
+        "'config.json'",
+        "'config.json'",
+        "'config.json'"
+      ]
+    },
+    {
+      "file": "project-management.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Generic error messages: Found 1 instances",
+      "examples": [
+        "throw new Error('No active project available. Use create_project to create a new project or switch_project to activate an existing one.')"
+      ]
+    },
+    {
+      "file": "project-management.js",
+      "type": "ASYNC_ISSUE",
+      "severity": "MEDIUM",
+      "message": "Multiple awaits that could be parallel: Found 1 instances",
+      "examples": [
+        "await Promise.all(\n        globalData.projects.map(async (projectId) => {\n          const config = await"
+      ]
+    },
+    {
+      "file": "project-management.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Triple nested loops: Found 1 instances"
+    },
+    {
+      "file": "reasoning-engine.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 6 instances",
+      "examples": [
+        "'config.json'",
+        "'config.json'",
+        "'learning_history.json'"
+      ]
+    },
+    {
+      "file": "reasoning-engine.js",
+      "type": "TYPE_SAFETY",
+      "severity": "MEDIUM",
+      "message": "Multiple optional chaining (potential over-defensive): Found 1 instances",
+      "examples": [
+        "?.completedTopics?."
+      ]
+    },
+    {
+      "file": "reasoning-engine.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Triple nested loops: Found 1 instances"
+    },
+    {
+      "file": "reasoning-engine.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 1 instances",
+      "examples": [
+        "Key"
+      ]
+    },
+    {
+      "file": "schedule-generator.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 4 instances",
+      "examples": [
+        "'config.json'",
+        "`day_${targetDate}.json`",
+        "'hta.json'"
+      ]
+    },
+    {
+      "file": "schedule-generator.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Generic error messages: Found 1 instances",
+      "examples": [
+        "throw new Error('Project configuration not found')"
+      ]
+    },
+    {
+      "file": "task-completion.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 11 instances",
+      "examples": [
+        "'config.json'",
+        "`day_${today}.json`",
+        "`day_${today}.json`"
+      ]
+    },
+    {
+      "file": "task-completion.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Generic error messages: Found 1 instances",
+      "examples": [
+        "throw new Error('Project configuration not found')"
+      ]
+    },
+    {
+      "file": "task-completion.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Triple nested loops: Found 1 instances"
+    },
+    {
+      "file": "task-intelligence.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 9 instances",
+      "examples": [
+        "'config.json'",
+        "'config.json'",
+        "'config.json'"
+      ]
+    },
+    {
+      "file": "task-intelligence.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 14 instances",
+      "examples": [
+        "key",
+        "Key"
+      ]
+    },
+    {
+      "file": "task-intelligence.js",
+      "type": "PERFORMANCE",
+      "severity": "MEDIUM",
+      "message": "Length calculation in loop condition: Found 1 instances",
+      "examples": [
+        "for (let i = 0; i < Math.min(3, interests.length)"
+      ]
+    },
+    {
+      "file": "tool-router.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 1 instances",
+      "examples": [
+        "console.error("
+      ]
+    },
+    {
+      "file": "tool-router.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Generic error messages: Found 1 instances",
+      "examples": [
+        "throw new Error(`Unknown tool: ${toolName}`)"
+      ]
+    },
+    {
+      "file": "tool-router.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Large switch statements (6+ cases): Found 1 instances"
+    },
+    {
+      "file": "tool-router.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 1 instances",
+      "examples": [
+        "key"
+      ]
+    },
+    {
+      "file": "complexity-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 17 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "complexity-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 1 instances"
+    },
+    {
+      "file": "complexity-test.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 4 instances",
+      "examples": [
+        "key",
+        "key"
+      ]
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 3 instances",
+      "examples": [
+        "'test-data.json'",
+        "'corrupted.json'",
+        "`parallel-${i}.json`"
+      ]
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 36 instances",
+      "examples": [
+        "console.log(",
+        "console.error(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Console.log in catch blocks: Found 6 instances",
+      "examples": [
+        "catch (error) {\n            console.log",
+        "catch (error) {\n            console.log"
+      ]
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Silent error swallowing: Found 3 instances",
+      "examples": [
+        "catch (error) {\n            return",
+        "catch (error) {\n            return"
+      ]
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Generic error messages: Found 3 instances",
+      "examples": [
+        "throw new Error(`Data integrity check failed: ${originalSize} !== ${readSize}`)",
+        "throw new Error(`Schedule validation failed: ${gaps.length} gaps, ${overlaps.length} overlaps`)"
+      ]
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "ASYNC_ISSUE",
+      "severity": "MEDIUM",
+      "message": "Await in for loop (potential performance issue): Found 6 instances",
+      "examples": [
+        "for (const testCase of testCases) {\n            await",
+        "for (const config of extremeConfigs) {\n            await"
+      ]
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "ASYNC_ISSUE",
+      "severity": "MEDIUM",
+      "message": "Manual Promise construction: Found 1 instances",
+      "examples": [
+        "new Promise("
+      ]
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "TYPE_SAFETY",
+      "severity": "MEDIUM",
+      "message": "Loose equality with null: Found 1 instances",
+      "examples": [
+        "== null"
+      ]
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Complex boolean conditions: Found 1 instances"
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Triple nested loops: Found 6 instances"
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Large switch statements (6+ cases): Found 1 instances"
+    },
+    {
+      "file": "comprehensive-stress-test.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Non-cryptographic random number generation: Found 13 instances",
+      "examples": [
+        "Math.random()",
+        "Math.random()"
+      ]
+    },
+    {
+      "file": "critical-fixes-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 11 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "critical-fixes-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Complex boolean conditions: Found 1 instances"
+    },
+    {
+      "file": "critical-fixes-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 4 instances"
+    },
+    {
+      "file": "extreme-stress-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 2 instances",
+      "examples": [
+        "`file_${f}.json`",
+        "`file_${Math.floor(Math.random() * filesPerPath)}.json`"
+      ]
+    },
+    {
+      "file": "extreme-stress-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 12 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "extreme-stress-test.js",
+      "type": "TYPE_SAFETY",
+      "severity": "MEDIUM",
+      "message": "Loose equality with null: Found 2 instances",
+      "examples": [
+        "== null",
+        "== null"
+      ]
+    },
+    {
+      "file": "extreme-stress-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 3 instances"
+    },
+    {
+      "file": "extreme-stress-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Triple nested loops: Found 3 instances"
+    },
+    {
+      "file": "extreme-stress-test.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Non-cryptographic random number generation: Found 38 instances",
+      "examples": [
+        "Math.random()",
+        "Math.random()"
+      ]
+    },
+    {
+      "file": "identity-transformation-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 18 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "identity-transformation-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 1 instances"
+    },
+    {
+      "file": "identity-transformation-test.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 3 instances",
+      "examples": [
+        "Key",
+        "Key"
+      ]
+    },
+    {
+      "file": "impossible-dream-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 16 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "impossible-dream-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 2 instances"
+    },
+    {
+      "file": "impossible-dream-test.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Non-cryptographic random number generation: Found 1 instances",
+      "examples": [
+        "Math.random()"
+      ]
+    },
+    {
+      "file": "live-server-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded timeout values: Found 3 instances",
+      "examples": [
+        "setTimeout(() => {\n                if (!serverReady) {\n                    console.log('✅ Server assumed ready (no output detected)\\n');\n                    resolve();\n                }\n            }, 2000)",
+        "setTimeout(() => {\n                if (!responseReceived) {\n                    reject(new Error('Request timeout'));\n                }\n            }, 10000)",
+        "setTimeout(resolve, 2000)"
+      ]
+    },
+    {
+      "file": "live-server-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 32 instances",
+      "examples": [
+        "console.log(",
+        "console.error(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "live-server-test.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Console.log in catch blocks: Found 1 instances",
+      "examples": [
+        "catch (error) {\n            console.log"
+      ]
+    },
+    {
+      "file": "live-server-test.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Generic error messages: Found 1 instances",
+      "examples": [
+        "throw new Error('Invalid MCP response structure')"
+      ]
+    },
+    {
+      "file": "live-server-test.js",
+      "type": "ASYNC_ISSUE",
+      "severity": "MEDIUM",
+      "message": "Await in for loop (potential performance issue): Found 5 instances",
+      "examples": [
+        "for (const test of tests) {\n            await",
+        "for (const test of tests) {\n            await"
+      ]
+    },
+    {
+      "file": "live-server-test.js",
+      "type": "ASYNC_ISSUE",
+      "severity": "MEDIUM",
+      "message": "Manual Promise construction: Found 3 instances",
+      "examples": [
+        "new Promise(",
+        "new Promise("
+      ]
+    },
+    {
+      "file": "live-server-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Triple nested loops: Found 2 instances"
+    },
+    {
+      "file": "live-server-test.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Non-cryptographic random number generation: Found 1 instances",
+      "examples": [
+        "Math.random()"
+      ]
+    },
+    {
+      "file": "production-edge-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 1 instances",
+      "examples": [
+        "'project/path/file.json'"
+      ]
+    },
+    {
+      "file": "production-edge-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 11 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "production-edge-test.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Silent error swallowing: Found 1 instances",
+      "examples": [
+        "catch (error) {\n      return"
+      ]
+    },
+    {
+      "file": "production-edge-test.js",
+      "type": "TYPE_SAFETY",
+      "severity": "MEDIUM",
+      "message": "Loose equality with null: Found 1 instances",
+      "examples": [
+        "== null"
+      ]
+    },
+    {
+      "file": "production-edge-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 6 instances"
+    },
+    {
+      "file": "production-edge-test.js",
+      "type": "PERFORMANCE",
+      "severity": "MEDIUM",
+      "message": "Length calculation in loop condition: Found 1 instances",
+      "examples": [
+        "for (let i = 0; i < mockSchedule.length - 1; i++)"
+      ]
+    },
+    {
+      "file": "reasoning-engine-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 18 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "reasoning-engine-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 1 instances"
+    },
+    {
+      "file": "reasoning-engine-test.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 5 instances",
+      "examples": [
+        "Key",
+        "Key"
+      ]
+    },
+    {
+      "file": "stress-test.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 10 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "stress-test.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Generic error messages: Found 1 instances",
+      "examples": [
+        "throw new Error(`Assertion failed: ${message}`)"
+      ]
+    },
+    {
+      "file": "stress-test.js",
+      "type": "TYPE_SAFETY",
+      "severity": "MEDIUM",
+      "message": "Loose equality with null: Found 2 instances",
+      "examples": [
+        "== null",
+        "== null"
+      ]
+    },
+    {
+      "file": "stress-test.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 1 instances"
+    },
+    {
+      "file": "stress-test.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 1 instances",
+      "examples": [
+        "key"
+      ]
+    },
+    {
+      "file": "stress-test.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Non-cryptographic random number generation: Found 2 instances",
+      "examples": [
+        "Math.random()",
+        "Math.random()"
+      ]
+    },
+    {
+      "file": "test-basic.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 8 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "test-basic.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 1 instances"
+    },
+    {
+      "file": "test-final-integration.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded data directory path: Found 2 instances",
+      "examples": [
+        "'.forest-data'",
+        "'/Users/bretmeraki/.forest-data'"
+      ]
+    },
+    {
+      "file": "test-final-integration.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Hardcoded JSON file names: Found 2 instances",
+      "examples": [
+        "'/Users/bretmeraki/Library/Application Support/Claude/claude_desktop_config.json'",
+        "`${forestDataPath}/config.json`"
+      ]
+    },
+    {
+      "file": "test-final-integration.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 38 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "test-final-integration.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Console.log in catch blocks: Found 2 instances",
+      "examples": [
+        "catch (error) {\n            console.log",
+        "catch (error) {\n            console.log"
+      ]
+    },
+    {
+      "file": "test-final-integration.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 1 instances"
+    },
+    {
+      "file": "test-manual-startup.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 26 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "test-manual-startup.js",
+      "type": "ERROR_HANDLING",
+      "severity": "HIGH",
+      "message": "Console.log in catch blocks: Found 2 instances",
+      "examples": [
+        "catch (error) {\n            console.log",
+        "catch (error) {\n        console.log"
+      ]
+    },
+    {
+      "file": "test-manual-startup.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 2 instances"
+    },
+    {
+      "file": "test-modular-integration.js",
+      "type": "HARDCODED_VALUE",
+      "severity": "MEDIUM",
+      "message": "Console logging in production code: Found 14 instances",
+      "examples": [
+        "console.log(",
+        "console.log(",
+        "console.log("
+      ]
+    },
+    {
+      "file": "test-modular-integration.js",
+      "type": "COMPLEXITY",
+      "severity": "MEDIUM",
+      "message": "Very long functions (>1000 chars): Found 1 instances"
+    },
+    {
+      "file": "test-modular-integration.js",
+      "type": "SECURITY",
+      "severity": "HIGH",
+      "message": "Potential credential exposure: Found 1 instances",
+      "examples": [
+        "key"
+      ]
+    }
+  ]
+}

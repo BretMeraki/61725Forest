@@ -1,0 +1,39 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.27.2",
+    "@typescript-eslint/eslint-plugin": "^8.34.0",
+    "@typescript-eslint/parser": "^8.34.0",
+    "babel-jest": "^30.0.0",
+    "eslint": "^9.28.0",
+    "jest": "^30.0.0"
+  },
+  "scripts": {
+    "lint": "eslint server-modular.js modules/",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": [
+        "babel-jest",
+        {
+          "presets": [
+            [
+              "@babel/preset-env",
+              {
+                "targets": {
+                  "node": "current"
+                },
+                "modules": "commonjs"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

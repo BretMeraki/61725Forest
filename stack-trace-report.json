@@ -1,0 +1,1090 @@
+{
+  "timestamp": "2025-06-15T20:16:49.552Z",
+  "summary": {
+    "analysisComplete": true,
+    "totalModules": 17,
+    "totalExecutions": 39,
+    "totalErrors": 0,
+    "callStackDepth": 0
+  },
+  "dependencies": {
+    "totalModules": 17,
+    "modules": [
+      {
+        "name": "constants.js",
+        "dependencies": [],
+        "exports": [
+          "FILE_NAMES",
+          "DIRECTORIES",
+          "DEFAULT_DATA_DIR",
+          "SERVER_CONFIG",
+          "PERFORMANCE",
+          "VALIDATION",
+          "LOG_LEVELS",
+          "TASK_CONFIG",
+          "MEMORY_SYNC",
+          "ERROR_CONFIG",
+          "CLAUDE_CONFIG",
+          "PATHS",
+          "TOOL_NAMES",
+          "DEFAULTS",
+          "TIME_FORMATS"
+        ],
+        "size": 3812,
+        "complexity": 15
+      },
+      {
+        "name": "errors.js",
+        "dependencies": [],
+        "exports": [
+          "ForestError",
+          "ProjectConfigurationError",
+          "NoActiveProjectError",
+          "RequiredFieldsError",
+          "DataPersistenceError",
+          "ToolDispatchError",
+          "ValidationError",
+          "MemorySyncError",
+          "TaskExecutionError",
+          "HTATreeError",
+          "enhanceError",
+          "extractErrorInfo"
+        ],
+        "size": 4228,
+        "complexity": 12
+      },
+      {
+        "name": "core-infrastructure.js",
+        "dependencies": [
+          "@modelcontextprotocol/sdk/server/index.js",
+          "@modelcontextprotocol/sdk/server/stdio.js",
+          "fs/promises",
+          "path",
+          "os",
+          "http"
+        ],
+        "exports": [
+          "CoreInfrastructure"
+        ],
+        "size": 1630,
+        "complexity": 7
+      },
+      {
+        "name": "data-persistence.js",
+        "dependencies": [
+          "fs/promises",
+          "path"
+        ],
+        "exports": [
+          "DataPersistence"
+        ],
+        "size": 4101,
+        "complexity": 3
+      },
+      {
+        "name": "mcp-handlers.js",
+        "dependencies": [
+          "@modelcontextprotocol/sdk/types.js"
+        ],
+        "exports": [
+          "McpHandlers"
+        ],
+        "size": 19413,
+        "complexity": 2
+      },
+      {
+        "name": "tool-router.js",
+        "dependencies": [
+          "@modelcontextprotocol/sdk/types.js"
+        ],
+        "exports": [
+          "ToolRouter"
+        ],
+        "size": 6612,
+        "complexity": 2
+      },
+      {
+        "name": "analytics-tools.js",
+        "dependencies": [],
+        "exports": [
+          "AnalyticsTools"
+        ],
+        "size": 26848,
+        "complexity": 1
+      },
+      {
+        "name": "hta-status.js",
+        "dependencies": [],
+        "exports": [
+          "HtaStatus"
+        ],
+        "size": 6312,
+        "complexity": 1
+      },
+      {
+        "name": "hta-tree-builder.js",
+        "dependencies": [],
+        "exports": [
+          "HtaTreeBuilder"
+        ],
+        "size": 10163,
+        "complexity": 1
+      },
+      {
+        "name": "identity-engine.js",
+        "dependencies": [],
+        "exports": [
+          "IdentityEngine"
+        ],
+        "size": 27921,
+        "complexity": 1
+      },
+      {
+        "name": "llm-integration.js",
+        "dependencies": [],
+        "exports": [
+          "LlmIntegration"
+        ],
+        "size": 17615,
+        "complexity": 1
+      },
+      {
+        "name": "memory-sync.js",
+        "dependencies": [],
+        "exports": [
+          "MemorySync"
+        ],
+        "size": 6393,
+        "complexity": 1
+      },
+      {
+        "name": "project-management.js",
+        "dependencies": [],
+        "exports": [
+          "ProjectManagement"
+        ],
+        "size": 10957,
+        "complexity": 1
+      },
+      {
+        "name": "reasoning-engine.js",
+        "dependencies": [],
+        "exports": [
+          "ReasoningEngine"
+        ],
+        "size": 15280,
+        "complexity": 1
+      },
+      {
+        "name": "schedule-generator.js",
+        "dependencies": [],
+        "exports": [
+          "ScheduleGenerator"
+        ],
+        "size": 11857,
+        "complexity": 1
+      },
+      {
+        "name": "task-completion.js",
+        "dependencies": [],
+        "exports": [
+          "TaskCompletion"
+        ],
+        "size": 17100,
+        "complexity": 1
+      },
+      {
+        "name": "task-intelligence.js",
+        "dependencies": [],
+        "exports": [
+          "TaskIntelligence"
+        ],
+        "size": 19418,
+        "complexity": 1
+      }
+    ],
+    "dependencyChains": [],
+    "circularDependencies": []
+  },
+  "execution": {
+    "totalExecutions": 39,
+    "executionsByContext": {
+      "StackTraceAnalyzer": [
+        {
+          "timestamp": "2025-06-15T20:16:49.545Z",
+          "context": "StackTraceAnalyzer",
+          "operation": "runComprehensiveTrace",
+          "details": {
+            "phase": "start"
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:204:10)",
+            "    at main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:20)",
+            "    at file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:489:3",
+            "    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)",
+            "    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)",
+            "    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60489728,
+            "heapTotal": 13484032,
+            "heapUsed": 9292880,
+            "external": 3776744,
+            "arrayBuffers": 275806
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.545Z",
+          "context": "StackTraceAnalyzer",
+          "operation": "analyzeModuleDependencies",
+          "details": {
+            "phase": "start"
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:76:10)",
+            "    at StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:18)",
+            "    at main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:20)",
+            "    at file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:489:3",
+            "    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)",
+            "    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)"
+          ],
+          "memoryUsage": {
+            "rss": 60489728,
+            "heapTotal": 13484032,
+            "heapUsed": 9304192,
+            "external": 3622900,
+            "arrayBuffers": 275806
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "context": "StackTraceAnalyzer",
+          "operation": "instrumentServer",
+          "details": {
+            "phase": "start"
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.instrumentServer (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:118:10)",
+            "    at StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:211:33)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60653568,
+            "heapTotal": 13484032,
+            "heapUsed": 10123352,
+            "external": 3908862,
+            "arrayBuffers": 561768
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "context": "StackTraceAnalyzer",
+          "operation": "testServerOperations",
+          "details": {
+            "phase": "start"
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.testServerOperations (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:233:10)",
+            "    at StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:214:18)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60669952,
+            "heapTotal": 13484032,
+            "heapUsed": 10200624,
+            "external": 3908862,
+            "arrayBuffers": 561768
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.552Z",
+          "context": "StackTraceAnalyzer",
+          "operation": "generateReport",
+          "details": {
+            "phase": "start"
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.generateReport (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:353:10)",
+            "    at StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:217:18)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 62013440,
+            "heapTotal": 18726912,
+            "heapUsed": 10689272,
+            "external": 3695584,
+            "arrayBuffers": 348490
+          },
+          "pid": 69353
+        }
+      ],
+      "undefined": [
+        {
+          "timestamp": "2025-06-15T20:16:49.545Z",
+          "type": "console.error",
+          "message": "🌳 Clean Forest MCP Server v2 started successfully!",
+          "stackTrace": [
+            "    at console.error (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:29:26)",
+            "    at CleanForestServer.run (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/server-modular.js:404:15)"
+          ]
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.545Z",
+          "type": "console.error",
+          "message": "📁 Data directory: /Users/bretmeraki/.forest-data",
+          "stackTrace": [
+            "    at console.error (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:29:26)",
+            "    at CleanForestServer.run (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/server-modular.js:405:15)"
+          ]
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.546Z",
+          "type": "console.error",
+          "message": "✅ NO HARDCODED RESPONSES - All data loaded from files",
+          "stackTrace": [
+            "    at console.error (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:29:26)",
+            "    at CleanForestServer.run (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/server-modular.js:406:15)"
+          ]
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "type": "console.error",
+          "message": "🏗️ CleanForestServer constructor starting...",
+          "stackTrace": [
+            "    at console.error (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:29:26)",
+            "    at new CleanForestServer (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/server-modular.js:32:13)",
+            "    at StackTraceAnalyzer.instrumentServer (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:126:16)",
+            "    at StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:211:33)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ]
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "type": "console.error",
+          "message": "✓ CleanForestServer constructor completed - NO HARDCODED RESPONSES",
+          "stackTrace": [
+            "    at console.error (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:29:26)",
+            "    at new CleanForestServer (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/server-modular.js:107:15)",
+            "    at StackTraceAnalyzer.instrumentServer (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:126:16)",
+            "    at StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:211:33)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ]
+        }
+      ],
+      "ModuleLoader": [
+        {
+          "timestamp": "2025-06-15T20:16:49.546Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "analytics-tools.js",
+            "dependencies": 0,
+            "size": 26848
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60555264,
+            "heapTotal": 13484032,
+            "heapUsed": 9442328,
+            "external": 3716186,
+            "arrayBuffers": 369092
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.546Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "constants.js",
+            "dependencies": 0,
+            "size": 3812
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60555264,
+            "heapTotal": 13484032,
+            "heapUsed": 9473424,
+            "external": 3720598,
+            "arrayBuffers": 373504
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.546Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "core-infrastructure.js",
+            "dependencies": 6,
+            "size": 1630
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60555264,
+            "heapTotal": 13484032,
+            "heapUsed": 9495896,
+            "external": 3722828,
+            "arrayBuffers": 375734
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.547Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "data-persistence.js",
+            "dependencies": 2,
+            "size": 4101
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60571648,
+            "heapTotal": 13484032,
+            "heapUsed": 9525264,
+            "external": 3727529,
+            "arrayBuffers": 380435
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.547Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "errors.js",
+            "dependencies": 0,
+            "size": 4228
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60571648,
+            "heapTotal": 13484032,
+            "heapUsed": 9548728,
+            "external": 3732357,
+            "arrayBuffers": 385263
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.547Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "hta-status.js",
+            "dependencies": 0,
+            "size": 6312
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60571648,
+            "heapTotal": 13484032,
+            "heapUsed": 9581712,
+            "external": 3739301,
+            "arrayBuffers": 392207
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.547Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "hta-tree-builder.js",
+            "dependencies": 0,
+            "size": 10163
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60571648,
+            "heapTotal": 13484032,
+            "heapUsed": 9618336,
+            "external": 3750068,
+            "arrayBuffers": 402974
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.547Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "identity-engine.js",
+            "dependencies": 0,
+            "size": 27921
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60588032,
+            "heapTotal": 13484032,
+            "heapUsed": 9698808,
+            "external": 3778629,
+            "arrayBuffers": 431535
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.547Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "llm-integration.js",
+            "dependencies": 0,
+            "size": 17615
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60588032,
+            "heapTotal": 13484032,
+            "heapUsed": 9770048,
+            "external": 3796864,
+            "arrayBuffers": 449770
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.547Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "mcp-handlers.js",
+            "dependencies": 1,
+            "size": 19413
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60588032,
+            "heapTotal": 13484032,
+            "heapUsed": 9806624,
+            "external": 3816877,
+            "arrayBuffers": 469783
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.547Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "memory-sync.js",
+            "dependencies": 0,
+            "size": 6393
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60588032,
+            "heapTotal": 13484032,
+            "heapUsed": 9835520,
+            "external": 3823884,
+            "arrayBuffers": 476790
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.547Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "project-management.js",
+            "dependencies": 0,
+            "size": 10957
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60588032,
+            "heapTotal": 13484032,
+            "heapUsed": 9873424,
+            "external": 3835463,
+            "arrayBuffers": 488369
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.547Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "reasoning-engine.js",
+            "dependencies": 0,
+            "size": 15280
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60588032,
+            "heapTotal": 13484032,
+            "heapUsed": 9919968,
+            "external": 3851369,
+            "arrayBuffers": 504275
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "schedule-generator.js",
+            "dependencies": 0,
+            "size": 11857
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60588032,
+            "heapTotal": 13484032,
+            "heapUsed": 9960032,
+            "external": 3863852,
+            "arrayBuffers": 516758
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "task-completion.js",
+            "dependencies": 0,
+            "size": 17100
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60637184,
+            "heapTotal": 13484032,
+            "heapUsed": 10037776,
+            "external": 3881580,
+            "arrayBuffers": 534486
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "task-intelligence.js",
+            "dependencies": 0,
+            "size": 19418
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60637184,
+            "heapTotal": 13484032,
+            "heapUsed": 10092920,
+            "external": 3901650,
+            "arrayBuffers": 554556
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "context": "ModuleLoader",
+          "operation": "analyzeModule",
+          "details": {
+            "module": "tool-router.js",
+            "dependencies": 1,
+            "size": 6612
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.analyzeModuleDependencies (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:100:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:208:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60637184,
+            "heapTotal": 13484032,
+            "heapUsed": 10117336,
+            "external": 3908862,
+            "arrayBuffers": 561768
+          },
+          "pid": 69353
+        }
+      ],
+      "ServerCreation": [
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "context": "ServerCreation",
+          "operation": "instantiate",
+          "details": {
+            "phase": "before"
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.instrumentServer (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:125:12)",
+            "    at StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:211:33)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60653568,
+            "heapTotal": 13484032,
+            "heapUsed": 10127344,
+            "external": 3908862,
+            "arrayBuffers": 561768
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "context": "ServerCreation",
+          "operation": "instantiate",
+          "details": {
+            "phase": "after",
+            "duration": 0
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.instrumentServer (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:127:12)",
+            "    at StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:211:33)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60669952,
+            "heapTotal": 13484032,
+            "heapUsed": 10189640,
+            "external": 3908862,
+            "arrayBuffers": 561768
+          },
+          "pid": 69353
+        }
+      ],
+      "OperationTest": [
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "context": "OperationTest",
+          "operation": "currentStatus",
+          "details": {
+            "phase": "start",
+            "description": "Test current status reporting"
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.testServerOperations (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:256:14)",
+            "    at StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:214:18)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60686336,
+            "heapTotal": 13484032,
+            "heapUsed": 10205624,
+            "external": 3908862,
+            "arrayBuffers": 561768
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.549Z",
+          "context": "OperationTest",
+          "operation": "currentStatus",
+          "details": {
+            "phase": "success",
+            "duration": 1,
+            "resultSize": 550
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.testServerOperations (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:260:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:214:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 61816832,
+            "heapTotal": 18726912,
+            "heapUsed": 9993928,
+            "external": 3628885,
+            "arrayBuffers": 281791
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.549Z",
+          "context": "OperationTest",
+          "operation": "listProjects",
+          "details": {
+            "phase": "start",
+            "description": "Test project listing"
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.testServerOperations (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:256:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:214:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 61816832,
+            "heapTotal": 18726912,
+            "heapUsed": 9997984,
+            "external": 3628885,
+            "arrayBuffers": 281791
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.551Z",
+          "context": "OperationTest",
+          "operation": "listProjects",
+          "details": {
+            "phase": "success",
+            "duration": 2,
+            "resultSize": 4291
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.testServerOperations (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:260:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:214:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 61997056,
+            "heapTotal": 18726912,
+            "heapUsed": 10649040,
+            "external": 3695584,
+            "arrayBuffers": 348490
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.551Z",
+          "context": "OperationTest",
+          "operation": "askTruthfulClaude",
+          "details": {
+            "phase": "start",
+            "description": "Test Claude integration"
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.testServerOperations (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:256:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:214:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 61997056,
+            "heapTotal": 18726912,
+            "heapUsed": 10653096,
+            "external": 3695584,
+            "arrayBuffers": 348490
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.552Z",
+          "context": "OperationTest",
+          "operation": "askTruthfulClaude",
+          "details": {
+            "phase": "success",
+            "duration": 1,
+            "resultSize": 1865
+          },
+          "stackTrace": [
+            "    at StackTraceAnalyzer.testServerOperations (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:260:14)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:214:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 62013440,
+            "heapTotal": 18726912,
+            "heapUsed": 10681992,
+            "external": 3695584,
+            "arrayBuffers": 348490
+          },
+          "pid": 69353
+        }
+      ],
+      "StatusReporting": [
+        {
+          "timestamp": "2025-06-15T20:16:49.548Z",
+          "context": "StatusReporting",
+          "operation": "currentStatus",
+          "details": {
+            "phase": "start",
+            "args": 0,
+            "callId": "k9k8c710q",
+            "stackDepth": 1
+          },
+          "stackTrace": [
+            "    at obj.<computed> [as currentStatus] (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:162:14)",
+            "    at Object.operation (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:238:33)",
+            "    at StackTraceAnalyzer.testServerOperations (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:257:35)",
+            "    at StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:214:18)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 60686336,
+            "heapTotal": 13484032,
+            "heapUsed": 10215504,
+            "external": 3908862,
+            "arrayBuffers": 561768
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.549Z",
+          "context": "StatusReporting",
+          "operation": "currentStatus",
+          "details": {
+            "phase": "success",
+            "duration": 1,
+            "callId": "k9k8c710q",
+            "resultType": "object"
+          },
+          "stackTrace": [
+            "    at obj.<computed> [as currentStatus] (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:173:16)",
+            "    at async StackTraceAnalyzer.testServerOperations (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:257:24)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:214:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 61816832,
+            "heapTotal": 18726912,
+            "heapUsed": 9987328,
+            "external": 3628885,
+            "arrayBuffers": 281791
+          },
+          "pid": 69353
+        }
+      ],
+      "ClaudeIntegration": [
+        {
+          "timestamp": "2025-06-15T20:16:49.551Z",
+          "context": "ClaudeIntegration",
+          "operation": "askTruthfulClaude",
+          "details": {
+            "phase": "start",
+            "args": 1,
+            "callId": "nh5q7l08x",
+            "stackDepth": 1
+          },
+          "stackTrace": [
+            "    at obj.<computed> [as askTruthfulClaude] (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:162:14)",
+            "    at Object.operation (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:248:33)",
+            "    at StackTraceAnalyzer.testServerOperations (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:257:35)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:214:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 61997056,
+            "heapTotal": 18726912,
+            "heapUsed": 10659528,
+            "external": 3695584,
+            "arrayBuffers": 348490
+          },
+          "pid": 69353
+        },
+        {
+          "timestamp": "2025-06-15T20:16:49.551Z",
+          "context": "ClaudeIntegration",
+          "operation": "askTruthfulClaude",
+          "details": {
+            "phase": "success",
+            "duration": 0,
+            "callId": "nh5q7l08x",
+            "resultType": "object"
+          },
+          "stackTrace": [
+            "    at obj.<computed> [as askTruthfulClaude] (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:173:16)",
+            "    at async StackTraceAnalyzer.testServerOperations (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:257:24)",
+            "    at async StackTraceAnalyzer.runComprehensiveTrace (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:214:7)",
+            "    at async main (file:///Users/bretmeraki/Desktop/claude-mcp-configs/forest-server/comprehensive-stack-trace.js:478:5)"
+          ],
+          "memoryUsage": {
+            "rss": 62013440,
+            "heapTotal": 18726912,
+            "heapUsed": 10672416,
+            "external": 3695584,
+            "arrayBuffers": 348490
+          },
+          "pid": 69353
+        }
+      ]
+    },
+    "timeline": [],
+    "performanceMetrics": {
+      "OperationTest": {
+        "count": 6,
+        "avgDuration": 1.3333333333333333,
+        "maxDuration": 2,
+        "minDuration": 1
+      },
+      "StatusReporting": {
+        "count": 2,
+        "avgDuration": 1,
+        "maxDuration": 1,
+        "minDuration": 1
+      }
+    }
+  },
+  "errors": {
+    "totalErrors": 0,
+    "errorsByType": {},
+    "criticalErrors": [],
+    "allErrors": []
+  },
+  "callStack": [],
+  "memoryUsage": {
+    "rss": 62029824,
+    "heapTotal": 18726912,
+    "heapUsed": 10729392,
+    "external": 3695584,
+    "arrayBuffers": 348490
+  }
+}
